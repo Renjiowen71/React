@@ -13,6 +13,8 @@ import ExMap from './components/ExMap';
 import ExKey from './components/ExKey';
 import ExForm from './components/ExForm';
 import ExFetch from './components/ExFetch';
+import Containment from './components/Containment';
+import Radio from './components/Radio';
 
 function App() {
   return (
@@ -37,7 +39,9 @@ function App() {
       {/* <ExMap/> */}
       {/* <ExKey /> */}
       {/* <ExForm/> */}
-      <ExFetch/>
+      {/* <ExFetch/> */}
+      {/* <Containment/> */}
+      <Radio/>
     </div>
   )
 }
