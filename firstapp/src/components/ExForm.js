@@ -35,27 +35,26 @@ function ExForm(){
                         placeholder="Name" 
                         name="name" 
                         value={formData.name} 
-                        onChange={e => setFormData({...formData, [e.target.name]: e.target.value})}
+                        onChange={e => setFormData({...formData, [e.target.id]: e.target.value})}
                     />
                 </div>
                 <div className="fieldFeedback">
                     <label htmlFor='score'>Score: {formData.score} </label>
                     <input 
-                        name="score"
+                        id="score"
                         type='range'
                         min={0}
                         max={10}
                         value={formData.score}
-                        onChange={e => setFormData({...formData, [e.target.name]: e.target.value})}
+                        onChange={e => setFormData({...formData, [e.target.id]: e.target.value})}
                     />
                 </div>
                 <div className="fieldComment">
                     <label htmlFor='comment'>Comment: </label>
                     <textarea 
                         id="comment"
-                        name="comment" 
                         value={formData.comment} 
-                        onChange={e => setFormData({...formData, [e.target.name]: e.target.value})}
+                        onChange={e => setFormData({...formData, [e.target.id]: e.target.value})}
                     />
                 </div>
                 <button disabled={!formData.name} type="submit">Submit</button>
