@@ -15,10 +15,12 @@ import ExForm from './components/ExForm';
 import ExFetch from './components/ExFetch';
 import Containment from './components/Containment';
 import Radio from './components/Radio';
+import Mouse from './components/Mouse';
 
 function App() {
   return (
     <div className="App">  
+      Hello World
       {/* <nav className="nav">
         <Link to="/" className="nav-item">Homepage</Link>
         <Link to="/about-me" className="nav-item">AboutMe</Link>
@@ -38,10 +40,11 @@ function App() {
       <ExReducer/> */}
       {/* <ExMap/> */}
       {/* <ExKey /> */}
-      {/* <ExForm/> */}
+      <ExForm/>
       {/* <ExFetch/> */}
       {/* <Containment/> */}
-      <Radio/>
+      {/* <Radio/> */}
+      {/* <Mouse /> */}
     </div>
   )
 }
