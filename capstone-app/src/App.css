@@ -104,13 +104,19 @@ section.hero img{
 }
 
 .button {
-  display: inline-block;          /* Makes the link behave like a button */
-  padding: 20px 30px;             /* Add padding */
-  background-color: var(--primary-colorYellow);      /* Green background */
-  color: var(--secondary-colorBlack);                   /* White text */
-  text-decoration: none;          /* Remove underline */
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: var(--primary-colorYellow);
+  color: var(--secondary-colorBlack);
+  text-decoration: none;
   border-radius: 5px;
-  font-family: 'Karla';             /* Rounded corners */
-  font-size: 18px;                /* Set font size */
-  text-align: center;             /* Center the text inside */
+  font-family: 'Karla';
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover{
+  background-color: var(--secondary-colorCream);
+  transform: scale(1.05);
 }
