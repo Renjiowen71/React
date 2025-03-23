@@ -1,26 +1,21 @@
-import hero from '../../assets/hero.png';
-import { Link } from "react-router-dom";
-
+import About from './Home/About';
+import Hero from './Home/Hero'
+import Specials from './Home/Specials'
+import Testimonials from './Home/Testimonials';
 function Home() {
   return (
     <div className="container">
       <section className='hero'>
-        <div className='hero-text'>
-          <h1>Little Lemon</h1>
-          <h3>Chicago</h3>
-          <p className="lead-text">We are a family owned  Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-          <Link to="/reservation" className='button'>Reserve a Table</Link>
-        </div>
-        <img src={hero}/>
+        <Hero/>
       </section>
-      <section>
-        <h2>Special</h2>
+      <section className='specials'>
+        <Specials/>
       </section>
-      <section>
-        <h2>Testimonial</h2>
+      <section className='testimonials'>
+        <Testimonials/>
       </section>
-      <section>
-        <h2>About</h2>
+      <section className='about'>
+        <About/>
       </section>
     </div>
   );
